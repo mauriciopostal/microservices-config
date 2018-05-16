@@ -15,6 +15,15 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://discovery-service:8761/eureka/
+  cloud:
+    loadbalancer:
+      retry:
+        enabled: true
 
 server:
   port: 8080
+  
+ribbon:
+  MaxAutoRetries: 1
+  MaxAutoRetriesNextServer: 2
+  OkToRetryOnAllOperations: true
