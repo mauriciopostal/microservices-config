@@ -16,7 +16,7 @@ spring:
   zipkin:
     baseUrl: http://bruno-vbox.local:9411/zipkin/
     sender:
-      type:web
+      type: web
 eureka:
   instance:
     preferIpAddress: true
