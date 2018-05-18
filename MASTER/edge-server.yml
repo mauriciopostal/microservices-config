@@ -25,6 +25,11 @@ zuul:
 ---
 spring:
   profiles: docker
+  sleuth:
+    sampler:
+      percentage: 1.0
+  zipkin:
+    baseUrl: http://bruno-vbox.local:9411/zipkin/
 eureka:
   instance:
     preferIpAddress: true
