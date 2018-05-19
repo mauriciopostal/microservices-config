@@ -1,13 +1,8 @@
 server:
   port: 0
 
-spring:
-  profiles: docker
-  sleuth:
-    sampler:
-      percentage: 1.0  
-  zipkin:
-    baseUrl: http://bruno-vbox.local:9411/zipkin/
+spring.zipkin.baseUrl: http://bruno-vbox.local:9411/zipkin/
+spring.sleuth.sampler.percentage: 1
 
 eureka:
   instance:
