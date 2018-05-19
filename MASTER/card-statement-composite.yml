@@ -12,6 +12,7 @@ spring.sleuth.web.skipPattern: ".*metrics.*"
 
 spring.sleuth.sampler.percentage: 1
 spring.sleuth.integration.enabled: false
+feign.hystrix.enabled: true
 
 ---
 spring:
