@@ -3,6 +3,8 @@ server:
 turbine:
   amqp:
     port: 8989
+    
+turbine.stream.port: 8989
 
 ---
 spring:
