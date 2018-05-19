@@ -3,7 +3,7 @@ server:
 
 spring.zipkin.baseUrl: http://bruno-vbox.local:9411/
 spring.zipkin.sender.type: web
-spring.sleuth.web.skipPattern: HystrixStreamTask
+spring.sleuth.web.skipPattern: **HystrixStreamTask**
 
 spring.sleuth.sampler.percentage: 1
 spring.sleuth.integration.enabled: false
