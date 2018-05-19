@@ -9,6 +9,16 @@ eureka:
     serviceUrl:
       defaultZone: http://192.168.1.148:8761/eureka/
       
+spring:
+  profiles: docker
+  sleuth:
+    sampler:
+      percentage: 1.0
+  zipkin:
+    baseUrl: http://bruno-vbox.local:9411/zipkin/
+    sender:
+      type: web
+      
 ---
 spring:
   profiles: docker
