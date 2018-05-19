@@ -2,6 +2,8 @@ server:
   port: 0
 
 eureka:
+  instance:
+    preferIpAddress: true
   client:
     registryFetchIntervalSeconds: 3
     serviceUrl:
@@ -16,9 +18,3 @@ spring:
     baseUrl: http://bruno-vbox.local:9411/zipkin/
     sender:
       type: web
-eureka:
-  instance:
-    preferIpAddress: true
-  client:
-    serviceUrl:
-      defaultZone: http://discovery-service:8761/eureka/
