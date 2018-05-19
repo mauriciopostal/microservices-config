@@ -3,7 +3,7 @@ server:
 
 spring.zipkin.baseUrl: http://bruno-vbox.local:9411/
 spring.sleuth.sampler.percentage: 1
-spring.zipkin.sender.type: WEBa
+spring.zipkin.sender.type: web
 
 eureka:
   instance:
