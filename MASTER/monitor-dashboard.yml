@@ -1,14 +1,17 @@
 server:
   port: 8179
----
-spring:
-  profiles: docker
+ 
 eureka:
   instance:
     preferIpAddress: true
   client:
     serviceUrl:
       defaultZone: http://discovery-service:8761/eureka/
+  
+---
+spring:
+  profiles: docker
+
 
 server:
   port: 8179
