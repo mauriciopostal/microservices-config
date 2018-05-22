@@ -11,6 +11,8 @@ spring.sleuth.integration.enabled: false
 eureka:
   instance:
     preferIpAddress: true
+    metadataMap:
+      cluster: CLUSTER
   client:
     registryFetchIntervalSeconds: 3
     serviceUrl:
