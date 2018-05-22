@@ -3,6 +3,7 @@ server:
 turbine:
   amqp:
     port: 8989
+  appConfig: card-service,statement-service,card-statement-composite,edge-server
     
 turbine.stream.port: 8989
 
