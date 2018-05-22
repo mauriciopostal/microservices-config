@@ -9,6 +9,7 @@ turbine:
   clusterNameExpression: metadata['cluster']
   combineHostPort: true 
     
+turbine.appConfig: card-service,statement-service,card-statement-composite,edge-server
 turbine.stream.port: 8989
 
 ---
