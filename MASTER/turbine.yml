@@ -4,6 +4,10 @@ turbine:
   amqp:
     port: 8989
   appConfig: card-service,statement-service,card-statement-composite,edge-server
+  aggregator:
+    clusterConfig: CLUSTER
+  clusterNameExpression: metadata['cluster']
+  combineHostPort: true 
     
 turbine.stream.port: 8989
 
