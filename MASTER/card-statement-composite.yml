@@ -4,11 +4,11 @@ server:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://192.168.1.148:8761/eureka/
+      defaultZone: http://192.168.10.80:8761/eureka/
 
 hystrix.threadpool.default.coreSize: 100
 
-spring.zipkin.baseUrl: http://bruno-vbox.local:9411/
+spring.zipkin.baseUrl: http://192.168.10.80:9411/
 spring.zipkin.sender.type: web
 spring.sleuth.web.skipPattern: ".*metrics.*"
 
