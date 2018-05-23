@@ -23,7 +23,7 @@ zuul:
         serviceId: card-statement-composite
         stripPrefix: true
         
-spring.zipkin.baseUrl: http://bruno-vbox.local:9411/
+spring.zipkin.baseUrl: http://192.168.10.80:9411/
 spring.zipkin.sender.type: web
 spring.sleuth.web.skipPattern: ".*metrics.*"
 
@@ -37,7 +37,7 @@ spring:
     sampler:
       percentage: 1.0
   zipkin:
-    baseUrl: http://bruno-vbox.local:9411/zipkin/
+    baseUrl: http://192.168.10.80:9411/zipkin/
 eureka:
   instance:
     preferIpAddress: true
