@@ -9,6 +9,7 @@ turbine:
   clusterNameExpression: metadata['cluster']
   combineHostPort: true 
     
+turbine.clusterNameExpression: metadata['cluster']
 turbine.appConfig: card-service,statement-service,card-statement-composite,edge-server
 turbine.stream.port: 8989
 InstanceDiscovery.impl: com.netflix.turbine.discovery.EurekaInstanceDiscovery.class
