@@ -6,7 +6,7 @@ eureka:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
       
-spring.zipkin.baseUrl: http://bruno-vbox.local:9411/
+spring.zipkin.baseUrl: http://192.168.10.80:9411/
 spring.zipkin.sender.type: web
 spring.sleuth.web.skipPattern: ".*metrics.*"
 
