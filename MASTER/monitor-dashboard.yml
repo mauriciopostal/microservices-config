@@ -1,23 +1,25 @@
 server:
-  port: 8179
- 
+  port: 8989
+
 eureka:
   instance:
-    preferIpAddress: true
+    nonSecurePort: ${server.port:8989}
   client:
     serviceUrl:
       defaultZone: http://192.168.10.80:8761/eureka/
-  
 ---
 spring:
   profiles: docker
 
-turbine.aggregator.clusterConfig: CLUSTER
-turbine.clusterNameExpression: metadata['cluster']
-turbine.appConfig: card-service,statement-service,card-statement-composite,edge-server
-turbine.stream.port: 8989
-InstanceDiscovery.impl: com.netflix.turbine.discovery.EurekaInstanceDiscovery.class
+
+turbine:
+  aggregator:
+    clusterConfig: SAMPLE-HYSTRIX-AGGREGATE
+  appConfig: SAMPLE-HYSTRIX-AGGREGATE
+
+logging:
+  level: INFO
 
 server:
-  port: 8179
+  port: 8989
 
