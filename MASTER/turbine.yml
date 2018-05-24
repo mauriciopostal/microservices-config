@@ -19,7 +19,7 @@ InstanceDiscovery.impl: com.netflix.turbine.discovery.EurekaInstanceDiscovery.cl
 spring:
   profiles: docker
   rabbitmq:
-    host: 192.168.1.100
+    host: 192.168.10.80
 eureka: 
   instance:
     preferIpAddress: true
